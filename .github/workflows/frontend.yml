@@ -28,8 +28,7 @@ jobs:
         node-version: 20
     - name: building frontend
       run: | 
-       
-        cd \D:\Jolly\myreactapp\myreactapp\WWA-frontend-master
+        cd /home/runner/work/myreactapp/myreactapp/WWA-frontend-master
         rm -rf node_modules
         npm install
       #sudo npm run test
