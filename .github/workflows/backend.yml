@@ -31,8 +31,8 @@ jobs:
         cd /home/runner/work/myreactapp/myreactapp/WWA-backend-master
         rm -rf node_modules
         npm install
+        npm run build 
         node index.js
-      #sudo npm run build 
       #sudo npm run test
        
     #- run: npm test
