@@ -27,6 +27,7 @@ jobs:
       with:
         node-version: 20 
     - name: building frontend
+      uses: actions/setup-node@v4
       run: | 
         cd */WWA-frontend-master
         rm -rf node_modules
