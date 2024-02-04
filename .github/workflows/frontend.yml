@@ -31,7 +31,7 @@ jobs:
         cd /home/runner/work/myreactapp/myreactapp/WWA-frontend-master
         rm -rf node_modules
         npm install
-      #sudo npm run test
+        sudo npm run test
        
     #- run: npm test
 
