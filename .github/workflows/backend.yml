@@ -26,13 +26,14 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 20
-    - name: building backend
+    - name: building frontend
       run: | 
         cd /home/runner/work/myreactapp/myreactapp/WWA-backend-master
         rm -rf node_modules
-      #npm run build
         npm install
-      #node index.js
+      
+      #npm run build 
+      #sudo npm start
       #sudo npm run test
        
     #- run: npm test
