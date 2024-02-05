@@ -1,0 +1,58 @@
+name: Automated document for ReactJs
+
+on: push
+ 
+jobs:
+  build: 
+    runs-on: ubuntu-latest 
+  
+    steps:
+      - name: Checkout Github Repository
+        uses: actions/checkout@v4
+
+      - name: Set Up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: |
+         cd /home/runner/work/myreactapp/myreactapp/WWA-frontend-master
+         rm -rf node_modules 
+         npm install 
+         npm run build
+
+  deploy:
+    runs-on: ubuntu-latest
+   # needs: build
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set Up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Generate Documentation
+        run: | 
+         sudo su
+         cd /home/runner/work/myreactapp/myreactapp/WWA-backend-master
+         rm -rf node_modules 
+         npm install
+         chmod +x jsdoc.json
+         npm run docs
+
+ 
+
+
+
+
+
