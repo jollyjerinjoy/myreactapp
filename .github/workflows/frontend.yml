@@ -32,7 +32,7 @@ jobs:
         rm -rf node_modules
         npm install
         npm run build 
-        CMD: npm start
+        
       #npm start
       #sudo npm run test
        
