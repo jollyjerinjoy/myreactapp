@@ -1,0 +1,18 @@
+name: OWASP-ZAP integration 
+on: [push]
+
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Full Scan ZAP website
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: main
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@master
+        with:
+          target: 'https://www.zaproxy.org/'
+          # rules_file_name: '.github/workflows/rules.tsv'
