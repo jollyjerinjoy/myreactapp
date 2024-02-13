@@ -5,6 +5,9 @@ jobs:
   zap_scan:
     runs-on: ubuntu-latest
     name: Scan the webapplication
+    permissions:
+       contents: write
+       pull-requests: write
     steps:
       - name: Checkout stage
         uses: actions/checkout@v2
