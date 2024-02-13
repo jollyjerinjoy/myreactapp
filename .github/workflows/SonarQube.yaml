@@ -1,0 +1,18 @@
+name: SonarQube Scan
+on:
+  push:
+    branches:
+      - main
+jobs:
+  sonarqube_scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v2.0.1
+        with:
+          projectBaseDir: .
+          sonarHost: ${{ secrets.SONAR_HOST }}
+          sonarToken: ${{ secrets.SONAR_TOKEN }}
+          sonarProjectKey: "your_project_key"
