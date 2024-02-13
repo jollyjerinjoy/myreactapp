@@ -15,4 +15,4 @@ jobs:
           projectBaseDir: .
           sonarHost: ${{ secrets.SONAR_HOST }}
           sonarToken: ${{ secrets.SONAR_TOKEN }}
-          sonarProjectKey: "your_project_key"
+          sonarProjectKey: "jollyjerinjoy_myreactapp"
