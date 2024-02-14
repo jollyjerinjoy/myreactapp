@@ -16,3 +16,4 @@ jobs:
           sonarHost: ${{ secrets.SONAR_HOST }}
           sonarToken: ${{ secrets.SONAR_TOKEN }}
           sonarProjectKey: "jollyjerinjoy_myreactapp"
+         
