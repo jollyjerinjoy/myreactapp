@@ -1,6 +1,7 @@
 name: "sonar_cloud_scan_github_actions"
-on:
-  workflow_dispatch:
+on: [push]
+
+  #-workflow_dispatch:
 
 jobs:
   DemoSonarCloudSCan:
@@ -21,7 +22,7 @@ jobs:
              #-Dsonar.python.coverage.reportPaths=coverage.xml
                 # Example step to work with scan results - placeholder for custom logic
       - name: Process Scan Results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: report
          
