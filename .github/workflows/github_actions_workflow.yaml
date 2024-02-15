@@ -21,4 +21,10 @@ jobs:
              #-Dsonar.python.coverage.reportPaths=coverage.xml
                 # Example step to work with scan results - placeholder for custom logic
       - name: Process Scan Results
-        run: echo "Implement custom logic here, potentially using SonarCloud API to fetch/export results."
+        uses: actions/upload-artifact@v2
+        with:
+          name: report
+         
+          path: |
+            report_html.html
+            report_json.json
