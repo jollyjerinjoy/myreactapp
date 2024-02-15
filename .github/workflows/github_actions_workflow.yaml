@@ -21,11 +21,7 @@ jobs:
               -Dsonar.projectKey=myreactapp
              #-Dsonar.python.coverage.reportPaths=coverage.xml
                 # Example step to work with scan results - placeholder for custom logic
-      - name: Process Scan Results
-        uses: actions/upload-artifact@v3
-        with:
-          name: report
-         
-          path: |
-            report_html.html
-            report_json.json
+
+      - name: Fetch SonarCloud Analysis Results
+        run: |
+            curl -u ${{ secrets.SONAR_TOKEN }}: "https://sonarcloud.io/api/issues/search?componentKeys=myreactapp&statuses=OPEN" > analysis_results.json
