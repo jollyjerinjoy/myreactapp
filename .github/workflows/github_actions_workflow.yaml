@@ -22,6 +22,4 @@ jobs:
              #-Dsonar.python.coverage.reportPaths=coverage.xml
                 # Example step to work with scan results - placeholder for custom logic
 
-      - name: Fetch SonarCloud Analysis Results
-        run: |
-            curl -u ${{ secrets.SONAR_TOKEN }}: "https://sonarcloud.io/api/issues/search?componentKeys=myreactapp&statuses=OPEN" > analysis_results.json
+      
