@@ -15,5 +15,5 @@ jobs:
           projectBaseDir: .
         env:
             SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-            SONAR_TOKEN : ${{ secrets.SONAR1_TOKEN }} 
+            SONAR1_TOKEN : ${{ secrets.SONAR1_TOKEN }} 
             sonarProjectKey: "myreactapp" 
