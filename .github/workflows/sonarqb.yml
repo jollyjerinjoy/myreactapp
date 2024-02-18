@@ -10,10 +10,10 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
       - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v2.0.1
+        uses: SonarSource/sonarqube-scan-action@master
         with:
           projectBaseDir: .
-          sonarHost: ${{ secrets.SONAR_HOST }}
-          sonarToken: ${{ secrets.SONAR1_TOKEN }}
-          sonarProjectKey: "myreactapp"
-         
+        env:
+            SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+            SONAR1_TOKEN : ${{ secrets.SONAR1_TOKEN }} 
+            sonarProjectKey: "myreactapp" 
