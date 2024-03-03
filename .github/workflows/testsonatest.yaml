@@ -1,4 +1,4 @@
-name: test test Node.js CI with SonarClouds
+name: test test Node.js CI with SonarCloudss
 on:
   push:
     branches:
