@@ -19,7 +19,7 @@ jobs:
           args: >
               -Dsonar.organization=jollyjerinjoy
               -Dsonar.projectKey=myreactapp
-             #-Dsonar.python.coverage.reportPaths=coverage.xml
+             #-Dsonar.python.coverage.reportPaths=coverage.xml  test test
                 # Example step to work with scan results - placeholder for custom logic
 
       
