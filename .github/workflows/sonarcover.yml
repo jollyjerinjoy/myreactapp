@@ -30,7 +30,7 @@ jobs:
             -Dsonar.projectKey=myreactapp
             -Dsonar.sources=src
             -Dsonar.tests=src
-            -Dsonar.test.inclusions=**/*.test.js
+            -Dsonar.test.inclusions=**/*.jkjestshetty.js
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
 
             
