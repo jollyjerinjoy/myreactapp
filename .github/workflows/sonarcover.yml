@@ -1,4 +1,4 @@
-name: "jest_scan_github_actions"
+name: "jest_scan_github_actionscc"
 on:
   push:
     branches:
