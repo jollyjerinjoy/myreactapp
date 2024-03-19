@@ -34,7 +34,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR5_TOKEN }}
         with:
           args: >
-            -Dsonar.organization=arunbabu6
+            -Dsonar.organization=arunbabu
             -Dsonar.projectKey=myreactapp
             -Dsonar.sources=.
             -Dsonar.login=${{ secrets.SONAR5_TOKEN }}
