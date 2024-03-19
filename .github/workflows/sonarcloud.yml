@@ -35,7 +35,7 @@ jobs:
         with:
           args: >
             -Dsonar.organization=arunbabu
-            -Dsonar.projectKey=myreactapp1
+            -Dsonar.projectKey=arunbabu_myreactapp1
             -Dsonar.sources=.
             -Dsonar.login=${{ secrets.SONAR5_TOKEN }}
             -Dsonar.javascript.lcov.reportPaths=WWA-backend-master/coverage/lcov.info
