@@ -30,6 +30,6 @@ jobs:
         with:
           args: >
             -Dsonar.organization=jollyjerinjoy
-            -Dsonar.projectKey=myreactapp2
+            -Dsonar.projectKey=myreactapp
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
