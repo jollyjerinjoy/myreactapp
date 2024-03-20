@@ -46,8 +46,8 @@ jobs:
           name: Snyk-report
          
           path: |
-            report_html.html
             snyk-report.json
+            snyk-report.html
       #  - name: Display Snyk test results
        #   run: cat snyk-report.json
 
