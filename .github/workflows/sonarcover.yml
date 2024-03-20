@@ -1,4 +1,4 @@
-name: "jest_scan_github_actionscc"
+name: "jest_scan_github_action_sonarcloudcoverage"
 on:
   push:
     branches:
