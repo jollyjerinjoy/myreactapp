@@ -1,4 +1,4 @@
-name: "jest_scan_EDIT_AB"
+name: "jest_scan_EDIT_AsB"
 on:
   push:
     branches:
